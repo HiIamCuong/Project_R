@@ -1,0 +1,27 @@
+---
+title: "Project"
+author: "Group15"
+date: "2024-10-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+
+#Lấy dữ liệu
+
+```{r}
+covid_data<-read.csv("./covid_19_clean_complete.csv",header = T)
+covid_data
+
+rent_data<-read.csv("./hcm.csv",header = T)
+rent_data
+
+selling_data<-read.csv("./LazData.csv")
+selling_data
+```
